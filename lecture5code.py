@@ -14,7 +14,7 @@ for i in range(len(hidden_layer_sizes)):
   W = np.random.randn(fan_in,fan_out)*0.01 #layer initialization
   H = np.dot(X,W) #matrix mutiply
   H = act[nonlinearities[i]](H) #nonlinearity
-  Hs[i] = H #cache result on this year
+  Hs[i] = H #cache result on this layer
 
 
 #look at distributions at each layer
